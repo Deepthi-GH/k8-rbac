@@ -13,7 +13,7 @@ kind: ClusterRole
 metadata:
   name: roboshop-admin #roboshop-traine role
 rules:
-- apiGroups: ["storage.k8s.io/v1"] # "" indicates the core API group(deployment,replicas,pods,services everything comes under core group like v1)
+- apiGroups: ["storage.k8s.io"] # "" indicates the core API group(deployment,replicas,pods,services everything comes under core group like v1)
   resources: ["storageclasses"]
   verbs: ["get","list","watch"]
 
